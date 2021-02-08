@@ -12,7 +12,7 @@ def get_chuck_norris_jokes():
     response = requests.get(api_url).json()
 
     image_tag = "<image scr=" + response['icon_url'] + "alt='Chuck's Image>"
-    return "<strong>Random joke from chuck norris: </strong>" + response['value']
+    return "<strong>Random joke from chuck norris: </strong>" + response['value'] + image_tag
 
 
 # https://api.chucknorris.io/jokes/random
